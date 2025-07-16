@@ -10,7 +10,10 @@ export default function TodoList(props) {
             {todos.map((todo, todoIndex) => {
                 return (
                     <TodoCard {...props} key={todoIndex} index={todoIndex}>
-                        <p>{todo}</p>
+                        <p>{todo.text || todo}</p>
+                        <span className={`priority-badge priority-${todo.priority || 'medium'}`}>
+                            {todo.priority ? todo.priority.toUpperCase() : 'MEDIUM'}
+                        </span>
                     </TodoCard>
                 )
             })}

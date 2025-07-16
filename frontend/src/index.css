@@ -28,6 +28,16 @@ header {
   align-items: stretch;
 }
 
+header select {
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', system-ui;
+}
+
 header,
 .main {
   max-width: 800px;
@@ -100,6 +110,27 @@ p {
 
 .actionsContainer button:hover {
   opacity: 0.7;
+}
+
+.priority-badge {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: white;
+  margin-left: 8px;
+}
+
+.priority-high {
+  background: #dc2626;
+}
+
+.priority-medium {
+  background: #ea580c;
+}
+
+.priority-low {
+  background: #16a34a;
 }
 
 
